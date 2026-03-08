@@ -47,13 +47,13 @@ float calculate_area(Rectangle r){
 }
 void compare_areas(Rectangle x,Rectangle y,Rectangle z){
 	if((x.area>y.area)&&(x.area>z.area)){
-		printf("%s has largest area\n",x.name);
+		printf("%s has largest area = %.2f\n",x.name,x.area);
 	}
 	else if((y.area>x.area)&&(y.area>z.area)){
-		printf("%s has largest area\n",y.name);
+		printf("%s has largest area = %.2f\n",y.name,y.area);
 	}
 	else if((z.area>x.area)&&(z.area>y.area)){
-		printf("%s has largest area\n",z.name);
+		printf("%s has largest area = %.2f\n",z.name,z.area);
 	}
 	else{
 		printf("Areas are equal\n");
