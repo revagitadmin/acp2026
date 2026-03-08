@@ -6,6 +6,7 @@ void readFlights(int n, Flight_t f[]);
 void searchByDestination(int n, Flight_t f[], char searchDest[]);*/
 
 #include<stdio.h>
+#include<string.h>
 typedef struct{
     char flight_number[10];
     char destination[50];
@@ -39,7 +40,7 @@ void searchByDestination(int n,Flight *arr,char *d){
         int result=strcmp(d,arr[i].destination);
         if(result==0){
             printf("Flight number %s is available to your destination\n",arr[i].destination);
-            return 0;
+            return;
         }
     }
     printf("No flights for your destination\n");
