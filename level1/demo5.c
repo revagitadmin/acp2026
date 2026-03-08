@@ -14,11 +14,11 @@ int main(){
     printf("Enter size of array: ");
     scanf("%d",&n);
     int a1[n],a2[n];
-    void read_array(n,a1);
-    void read_array(n,a2);
-    void print_array(n,a1);
-    void print_array(n,a2);
-    void swap_array(n,a1,a2);
+    read_array(n,a1);
+    read_array(n,a2);
+    print_array(n,a1);
+    print_array(n,a2);
+    swap_array(n,a1,a2);
     return 0;
 }
 void read_array(int x,int *arr){
@@ -30,7 +30,7 @@ void read_array(int x,int *arr){
 void print_array(int x,int *arr){
     printf("Elements of array:\n");
     for(int i=0;i<x;i++){
-        printf("%d\t");
+        printf("%d\t",arr[i]);
     }
 }
 void swap_array(int x,int *a,int *b){
