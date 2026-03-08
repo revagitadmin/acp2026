@@ -32,6 +32,7 @@ void print_array(int x,int *arr){
     for(int i=0;i<x;i++){
         printf("%d\t",arr[i]);
     }
+    printf("\n");
 }
 void swap_array(int x,int *a,int *b){
     int temp=0;
@@ -40,12 +41,16 @@ void swap_array(int x,int *a,int *b){
         a[i]=b[i];
         b[i]=temp;
     }
+    printf("Elements of array 1 after swapping:\n");
     for(int i=0;i<x;i++){
-        printf("Elements of array 1 after swapping:\n%d\t",a[i]);
+        printf("%d\t",a[i]);
     }
+    printf("\n");
+    printf("Elements of array 2 after swapping:\n");
     for(int i=0;i<x;i++){
-        printf("Elements of array 2 after swapping:\n%d\t",b[i]);
+        printf("%d\t",b[i]);
     }
+    printf("\n");
 }
 
 
