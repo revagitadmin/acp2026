@@ -1,27 +1,18 @@
 #include <stdio.h>
-
-// Function prototypes
 void input(int n, float arr[n]);
 int find_max_index(int n, float arr[n]);
 void output(float arr[], int max_index);
-
 int main()
 {
     int n, max_index;
-
     printf("Enter number of elements: ");
     scanf("%d", &n);
-
     float arr[n];
-
     input(n, arr);
     max_index = find_max_index(n, arr);
     output(arr, max_index);
-
     return 0;
 }
-
-// Function to input array elements
 void input(int n, float arr[n])
 {
     for(int i = 0; i < n; i++)
@@ -30,12 +21,9 @@ void input(int n, float arr[n])
         scanf("%f", &arr[i]);
     }
 }
-
-// Function to find index of maximum value
 int find_max_index(int n, float arr[n])
 {
     int max_index = 0;
-
     for(int i = 1; i < n; i++)
     {
         if(arr[i] > arr[max_index])
@@ -43,11 +31,8 @@ int find_max_index(int n, float arr[n])
             max_index = i;
         }
     }
-
     return max_index;
 }
-
-// Function to display result
 void output(float arr[], int max_index)
 {
     printf("Maximum value = %.2f\n", arr[max_index]);
