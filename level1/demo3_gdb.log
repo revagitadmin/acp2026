@@ -1,0 +1,19 @@
+Breakpoint 1 at 0x4014a2: file demo3.c, line 29.
+[New Thread 22868.0x5fe4]
+[New Thread 22868.0x30ac]
+
+Breakpoint 1, 0x004014a2 in main () at demo3.c:29
+29	{
+n = 1999235664
+arr = 0xfffffffe
+max_rec = -207865827
+31	    printf("Enter the no of rectangles: ");
+n = 1999235664
+arr = 0xfffffffe
+max_rec = -207865827
+A debugging session is active.
+
+	Inferior 1 [process 22868] will be killed.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
