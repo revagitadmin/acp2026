@@ -36,9 +36,4 @@ int main()
     max=find_max_index(n,a);
     output(a,max);
     return 0;
-<<<<<<< HEAD
 }
-
-=======
-}
->>>>>>> 8267d367486a550cc5b7e745f0e65af5cabab986
