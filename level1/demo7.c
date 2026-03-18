@@ -11,25 +11,26 @@ void output(int result);
 
 */
 
-include<stdio.h>
+#include<stdio.h>
+
 
 void inputStrings(char str1[], char str2[]);
-int compareStrings(char str1[], char str2[]);
+int comparestrings(char str1[], char str2[]);
 void output(int result);
 
 int main()
 {
     char str1[100], str2[100];
-    inputstrings(str1,str2);
+    inputStrings(str1, str2);
     int result;
-    result = comparestrings(char str1[], char str2[]);
+    result = comparestrings(str1, str2);
     output(result);
     return 0;
 }
 
-void inputstrings(char str1[], char str2[])
+void inputStrings(char str1[], char str2[])
 {
-    printf("entre the string 1: ");
+    printf("enter the string 1: ");
     scanf("%s",str1);
     printf("entre the string 2: ");
     scanf("%s",str2);
@@ -41,18 +42,14 @@ int comparestrings(char str1[], char str2[])
     {
         if(str1[i]>str2[i])
         {
-            printf("string 1 is greater than string 2");
             return 1;
         }
         else if(str1[i]<str2[i])
         {
-            printf("string 2 is greater than string 1");
             return -1;
         }
-        else {
-            return 0;
-        }
     }
+    return 0;
 
 }
 
