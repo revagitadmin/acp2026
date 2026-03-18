@@ -15,10 +15,10 @@ void swap_array(int n, int a[n], int b[n]);
 int main()
 {
     int n;
-    int a[n];
-    int b[n];
     printf("entre the size of array: ");
     scanf("%d", &n);
+    int a[n];
+    int b[n];
     
     printf("entre the elem of array 1: ");
     read_array(n,a);
@@ -27,10 +27,11 @@ int main()
 
     printf("Before swap : Arrray 1 \n");
     print_array(n, a);
-    swap_array(n,a,b);
     printf("Before swap : Arrray 2 \n");
     print_array(n, b);
+
     swap_array(n,a,b);
+    
     printf("After swap : Array 1 \n");
     print_array(n,a);
     printf("After swap : Array 2 \n");
