@@ -10,24 +10,23 @@ void display(char *str);
 
 #include<stdio.h>
 
-void input(char *str1, char *str2);
+void input(char *str);
 void concatenate_strings(char *str1, char *str2);
 void display(char *str);
 
 int main()
 {
-    char str1[100], str2[100];
-    input(str1, str2);
-    concatenate_strings(&str1, &str2);
+    char str1[200], str2[100];
+    input(str1);
+    input(str2);
+    concatenate_strings(str1, str2);
     display(str1);
     return 0;
 }
-void input(char *str1, char *str2)
+void input(char *str)
 {
-    printf("enter string 1: ");
-    fgets(str1, 100, stdin);
-    printf("enter string 2: ");
-    fgets(str2, 100, stdin);
+    printf("enter string : ");
+    fgets(str, 100, stdin);
 }
 
 void concatenate_strings(char *str1, char *str2)
