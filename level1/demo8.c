@@ -27,6 +27,16 @@ void input(char *str)
 {
     printf("enter string : ");
     fgets(str, 100, stdin);
+    int i = 0;
+    while(str[i] != '\0')
+    {
+        if(str[i] == '\n')
+        {
+            str[i] = '\0';
+            break;
+        }
+        i++;
+    }
 }
 
 void concatenate_strings(char *str1, char *str2)
