@@ -54,7 +54,7 @@ float findHighest(int n, float temps[n])
 
 float findLowest(int n, float temps[n])
 {
-    int min=temps[0];
+    float min=temps[0];
     for(int i=0;i<n;i++)
     {
         if(temps[i]<min)
