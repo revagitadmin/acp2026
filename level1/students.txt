@@ -1,3 +1,3 @@
-jerrin 1 90.90
-priya 2 89.90
-karen 23 99.00
+jerrin 1 99.70
+jeni 2 99.50
+joshi 5 99.00
