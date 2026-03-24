@@ -9,7 +9,7 @@ void print_array(int *arr, int n);
 void delete_array(int **arr);
 */
 
- #include <stdio.h>
+#include <stdio.h>
  
 int* create_array(int n, int arr[]);
 void initialize_array(int *arr, int n);

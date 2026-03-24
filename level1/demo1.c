@@ -4,7 +4,7 @@ void input(int n, float arr[n]);
 int  find_max_index(int n, float arr[n]);
 void output(float arr[], int max_index);
 
-int main(void)
+int main()
 {
     int n;
     printf("Enter the number of elements: ");
