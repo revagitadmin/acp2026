@@ -1,0 +1,18 @@
+Breakpoint 1 at 0x40146f
+[New Thread 21340.0x1dbc]
+[New Thread 21340.0x4f48]
+
+Breakpoint 1, 0x0040146f in main ()
+No symbol table info available.
+Single stepping until exit from function main,
+which has no line number information.
+
+Program received signal SIGSEGV, Segmentation fault.
+__chkstk_ms () at ../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S:172
+No locals.
+A debugging session is active.
+
+	Inferior 1 [process 21340] will be killed.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]
+172	../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S: No such file or directory.

@@ -1,0 +1,19 @@
+Breakpoint 1 at 0x4014a0: file demo6.c, line 20.
+[New Thread 3108.0x442c]
+[New Thread 3108.0x1c54]
+
+Breakpoint 1, 0x004014a0 in main () at demo6.c:20
+20	{
+n = 4201200
+arr = 0x61ff54
+ptr = 0x76928c1d <msvcrt!atexit+13>
+22	    printf("Enter the number of elements: ");
+n = 4201200
+arr = 0x61ff54
+ptr = 0x76928c1d <msvcrt!atexit+13>
+A debugging session is active.
+
+	Inferior 1 [process 3108] will be killed.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
