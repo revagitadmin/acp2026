@@ -1,0 +1,7 @@
+./act1: No such file or directory.
+Make breakpoint pending on future shared library load? (y or [n]) [answered N; input not from terminal]
+No symbol table is loaded.  Use the "file" command.
+No executable specified, use `target exec'.
+No frame selected.
+The program is not being run.
+No frame selected.

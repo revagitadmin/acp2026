@@ -1,0 +1,8 @@
+Breakpoint 1 at 0x401463
+[New Thread 2124.0x1e48]
+[New Thread 2124.0x59ac]
+
+Breakpoint 1, 0x00401463 in main ()
+No symbol table info available.
+Single stepping until exit from function main,
+which has no line number information.

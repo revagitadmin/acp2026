@@ -1,0 +1,19 @@
+Breakpoint 1 at 0x40149a: file demo2.c, line 17.
+[New Thread 17692.0x5af4]
+[New Thread 17692.0x434c]
+
+Breakpoint 1, main () at demo2.c:17
+17	    Rectangle r1 = input();
+r1 = {name = "` @\000╨■a\000\b a\000╠ a\000PΩ)w\034\230╩º■   \b a\000\035î)w` @\000T a\000╗ @\000` ", length = 1.57201249e-038, width = 0, area = 3.87430999e-039}
+r2 = {name = "` @\000\000\000\000\000εï)wⁿ+½\000╝■a\000e\217*w\034├/wⁿ■a\000=ä*w\b\000\000\000-ï)w\023ï)w(l", length = 5.88424283e-039, width = 5.88424283e-039, area = 0}
+r3 = {name = "\000\000½\000\000\000\000\000≡+½\000|lä╨α\022@\000\b\000\000\000≡+½\000α\022@\000■   \000\000\000\000εï)w░■a\000╦E", length = 3.56487984e+033, width = 3.95911329e+033, area = 5.88424283e-039}
+18	    Rectangle r2 = input();
+r1 = {name = "cat\000D\000\000\000C:\\Users\000\000\000\000b\000\000@neDrive\\Documents\\GitHub\000", length = 2.65521203e-006, width = 1.16331423e+033, area = 0}
+r2 = {name = "` @\000\000\000\000\000εï)wⁿ+½\000╝■a\000e\217*w\034├/wⁿ■a\000=ä*w\b\000\000\000-ï)w\023ï)w(l", length = 5.88424283e-039, width = 5.88424283e-039, area = 0}
+r3 = {name = "\000\000½\000\000\000\000\000≡+½\000|lä╨α\022@\000\b\000\000\000≡+½\000α\022@\000■   \000\000\000\000εï)w░■a\000╦E", length = 3.56487984e+033, width = 3.95911329e+033, area = 5.88424283e-039}
+A debugging session is active.
+
+	Inferior 1 [process 17692] will be killed.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5

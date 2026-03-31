@@ -1,0 +1,16 @@
+Breakpoint 1 at 0x401463
+[New Thread 23520.0x35d0]
+[New Thread 23520.0x5848]
+
+Breakpoint 1, 0x00401463 in main ()
+No symbol table info available.
+Single stepping until exit from function main,
+which has no line number information.
+0x00401288 in __register_frame_info ()
+No symbol table info available.
+A debugging session is active.
+
+	Inferior 1 [process 23520] will be killed.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5

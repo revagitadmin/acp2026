@@ -1,0 +1,19 @@
+Breakpoint 1 at 0x4014a0: file demo5.c, line 16.
+[New Thread 24352.0x2ad0]
+[New Thread 24352.0x1cb4]
+
+Breakpoint 1, 0x004014a0 in main () at demo5.c:16
+16	{
+n = 6422280
+a = 0x61ff54
+b = 0x75968c1d <msvcrt!atexit+13>
+18	    printf("entre the size of array: ");
+n = 6422280
+a = 0x61ff54
+b = 0x75968c1d <msvcrt!atexit+13>
+A debugging session is active.
+
+	Inferior 1 [process 24352] will be killed.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5

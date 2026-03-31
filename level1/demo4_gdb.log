@@ -1,0 +1,19 @@
+Breakpoint 1 at 0x4014a2: file demo4.c, line 22.
+[New Thread 24144.0x39ac]
+[New Thread 24144.0x5dbc]
+
+Breakpoint 1, 0x004014a2 in main () at demo4.c:22
+22	{
+n = 6422280
+f = 0x568638fc
+searchDest = "—u\b\000\000\000-‹–u\023‹–uÈÌ{#à\022@\000à\022@\000\000\000\000\000Ð\033@\000Ðþa\000\bÿa\000Ìÿa\000Pê–u"
+23	int n=4;
+n = 6422280
+f = 0x568638fc
+searchDest = "—u\b\000\000\000-‹–u\023‹–uÈÌ{#à\022@\000à\022@\000\000\000\000\000Ð\033@\000Ðþa\000\bÿa\000Ìÿa\000Pê–u"
+A debugging session is active.
+
+	Inferior 1 [process 24144] will be killed.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
