@@ -30,6 +30,7 @@ void output(float arr[], int maxindex)
 int main()
 {
     int n;
+    printf("Enter size : ");
     scanf("%d", &n);
 
     float a[n];

@@ -1,0 +1,7 @@
+Script started on 2026-03-24 15:52:08+05:30 [TERM="xterm-256color" TTY="/dev/cons0" COLUMNS="89" LINES="17"]
+[?2004hsh-5.3$ gcc -g demo1.c de  -o demo1
+[?2004l[6n[6n[?9001h[?1004h[m[?25hCannot create temporary file in C:\windows\: Permission denied
+[?9001l[?1004l[?2004hsh-5.3$ exit
+[?2004lexit
+
+Script done on 2026-03-24 15:52:28+05:30 [COMMAND_EXIT_CODE="3"]
