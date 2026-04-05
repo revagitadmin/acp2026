@@ -1,0 +1,21 @@
+//write a c program in which u had a name and store it somewhere in memory and exir from the program when u type exit 
+#include<stdio.h>
+int main()
+{
+    char name[50];
+    while(1)
+    {
+        printf("Enter your name (or type 'exit' to quit): ");
+        scanf("%s", name);
+        if(strcmp(name, "exit") == 0)
+        {
+            printf("Exiting the program. Goodbye!\n");
+            break;
+        }
+        else
+        {
+            printf("Hello, %s!\n", name);
+        }
+    }
+    return 0;
+}
