@@ -1,55 +1,83 @@
-/*Create a structure  with flight_number, destination, and available_seats.
-Take input for 4 flights. Ask the user for a destination and check if a flight is available to that location. Display the flight number if found.
-void readFlights(int n, Flight_t f[]);
-void searchByDestination(int n, Flight_t f[], char searchDest[]);
-*/
 #include <stdio.h>
 #include <string.h>
 
-typedef struct {
+/* Structure Definition */
+typedef struct{
     int flight_number;
     char destination[50];
-    int available_seats;
-} Flight_t;
+    int seats;
+}Flight;
 
-// Function to read flight details
-void readFlights(int n, Flight_t f[]) {
-    for (int i = 0; i < n; i++) {
+/* Function Prototypes */
+void input_flights(int n, Flight flights[n]);
+int search_flights(int n, Flight flights[n], char destination[], int result[]);
+void display(int count, int result[], Flight flights[]);
+
+int main()
+{
+    int n=4; 
+    // printf("Enter n:");
+    // scanf("%d", &n);
+    Flight flights[n];
+    input_flights(n, flights);
+    char dest[50];
+    printf("Enter destination to search: ");
+    scanf("%s", dest);
+    int result[n];
+    int count = search_flights(n, flights, dest, result);
+    display(count, result, flights);
+    return 0;
+}
+
+/* Function to input flight details */
+void input_flights(int n, Flight flights[n])
+{
+    for(int i=0; i<n; i++)
+    {
+        printf("\nEnter details of flight %d\n", i+1);
+
         printf("Enter flight number: ");
-        scanf("%d", &f[i].flight_number);
+        // write code
+        scanf("%d", &flights[i].flight_number);
+
         printf("Enter destination: ");
-        scanf("%s", f[i].destination);
-        printf("Enter available seats: ");
-        scanf("%d", &f[i].available_seats);
+        // write code
+        scanf("%s", flights[i].destination);
+
+        printf("Enter available seats:\n");
+        // write code
+        scanf("%d", &flights[i].seats);
     }
 }
 
-// Function to search flights by destination
-void searchByDestination(int n, Flight_t f[], char searchDest[]) {
-    int found = 0;
-    for (int i = 0; i < n; i++) {
-        if (strcmp(f[i].destination, searchDest) == 0) {
-            printf("\nFlight found! Flight Number: %d, Seats Available: %d\n",
-                   f[i].flight_number, f[i].available_seats);
-            found = 1;
+/* Function to search flights */
+int search_flights(int n, Flight flights[n], char dest[], int result[])
+{
+    int count = 0;
+    for(int i=0; i<n; i++){
+        if(strcmp( dest, flights[i].destination) == 0)
+        {
+            result[count] = i;
+            count++;
         }
     }
-    if (!found) {
-        printf("\nNo flights available to %s\n", searchDest);
-    }
+        // write condition using strcmp
+        // store index in result[count]
+    return count;
 }
 
-int main() {
-    int n = 4;
-    Flight_t flights[n];
-
-    readFlights(n, flights);
-
-    char searchDest[50];
-    printf("\nEnter destination to search: ");
-    scanf("%s", searchDest);
-
-    searchByDestination(n, flights, searchDest);
-
-    return 0;
+/* Function to display result */
+void display(int count, int result[], Flight flights[])
+{
+    if(count == 0 ){
+        printf("No flight available to the given destination\n");
+    }
+    else{
+        printf("Flights available:\n");
+        for(int i=0 ; i<count; i++)
+        {
+            int index = result[i];
+            printf("Flight Number: %d\n", flights[index].flight_number);
+        }
+    }
 }

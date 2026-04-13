@@ -26,7 +26,7 @@ void output(int largestIndex, Rectangle rects[]);
     int n;
     printf("enter the number of rectangles:\n");
     scanf("%d",&n);
-    Rectangle rects[n];
+    Rectangle rects[n];]
     input(n,rects);
     calculate_area(n,rects);
     int largest_index=findLargestArea(n,rects);

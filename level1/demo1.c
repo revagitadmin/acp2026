@@ -7,7 +7,7 @@ void output(float arr[ ], int max_index);
 #include <stdio.h>
 
 // Function prototypes
-void input(int n, float arr[n]);
+void input(int n, float arr[n]);//declaring the fucntions here
 int find_max_index(int n, float arr[n]);
 void output(float arr[], int max_index);
 

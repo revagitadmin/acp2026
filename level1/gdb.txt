@@ -1,0 +1,11 @@
+No symbol table is loaded.  Use the "file" command.
+Breakpoint 1 (main) pending.
+Starting program:  
+No executable file specified.
+Use the "file" or "exec-file" command.
+The program is not being run.
+Starting program:  
+No executable file specified.
+Use the "file" or "exec-file" command.
+No executable file now.
+The program is not being run.
